@@ -1,0 +1,83 @@
+body{
+  font-size: 30px;
+}
+h1 {
+  text-shadow:
+    1px 1px 0px rgb(128,128,128),
+    2px 3px 0px rgb(128,128,128),
+    3px 3px 0px rgb(128,128,128),
+    4px 4px 0px rgb(128,128,128),
+    5px 4px 0px rgb(128,128,128),
+    6px 6px 0px rgb(128,128,128),
+    7px 7px 0px rgb(128,128,128),
+    8px 8px 0px rgb(128,128,128),
+    9px 9px 0px rgb(128,128,128),
+    10px 10px 0px rgb(128,128,128)
+}
+h1 span{
+  color: blue;
+}
+/* h3{
+  text-shadow: 0px 1px 0px red,
+  0px 2px 0px red,
+  0px 3px 0px red,
+  0px 4px 0px red,
+  0px 5px 0px red;
+  color: white;
+  font-size: 60px;
+} */
+/* h3{
+  text-shadow: 1px 0px 0px red,
+  2px 0px 0px red,
+  3px 0px 0px red,
+  4px 0px 0px red,
+  5px 0px 0px red;
+  color: white;
+  font-size: 60px;
+} */
+ h3{
+  text-shadow: 0px 0px 1px red,
+  0px 0px 2px red,
+  0px 0px 3px red,
+  0px 0px 4px red,
+  0px 0px 5px red;
+  color: white;
+  font-size: 60px;
+}
+.b{
+  font-size: 100%;
+}
+.b>input{
+  font-size: 100%;
+  text-transform:uppercase;
+}
+h2{
+  font-family:comic,"宋体";
+}
+
+
+.a{
+  text-align: right;
+  font-size: 30px;
+}
+.a > b{
+  color:rgb(255,0,255);
+  text-decoration: underline red;
+}
+.a>b::before{
+  content:"aaa ";
+}
+.a>b::after{
+  content: " aaa";
+}
+.a > span{
+  text-decoration: line-through underline;
+}
+.d{
+  word-spacing: 15px;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+.c span{
+  font-size: 1.5em;
+}

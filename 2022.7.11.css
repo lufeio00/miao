@@ -1,0 +1,45 @@
+div{
+  margin-bottom: 20px;
+}
+div.a{
+  height: 45px;
+  background-color: red;
+}
+.a>p{
+  width: 560px;
+  height: 20px;
+  margin: auto;
+}
+
+.b{
+  border: 2px solid blue;
+  width: 600px;
+  margin-left: auto;
+}
+
+div.c{
+  border: 2px solid rgb(255,192,203);
+  width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+div.d{
+  border: 2px solid rgb(5, 255, 5);
+  width: 500px;
+  height: 100px;
+  margin-left: 50px;
+}
+div.e{
+  border: 2px;
+  border-style: dashed solid dotted dotted ;
+  border-color: red;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.f{
+  border: 10px solid black;
+  border-radius: 10px;
+  width: 800px;
+  margin: auto;
+}
