@@ -1,0 +1,55 @@
+body *{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+header{
+  background-color: black;
+}
+.a{
+  color: aliceblue;
+  width: 600px;
+  margin: auto;
+}
+.p1{
+  width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.d1{
+  width: 600px;
+  margin: auto;
+}
+.d1>div{
+  width: 174px;
+  height: 34px;
+  border: 3px solid;
+  margin-bottom: 15px;
+  background-color: rgb(255,192,203);
+  text-align: center;
+  line-height: 34px;
+
+}
+.d1>div:nth-child(n+5){
+  margin-left: 210px;
+}
+.d1>div:nth-child(n+9){
+  margin-left: 420px;
+}
+.d1>div:nth-child(5){
+  margin-top: -220px;
+}
+.d1>div:nth-child(9){
+  margin-top: -220px;
+}
+.p2{
+  width: 600px;
+  margin:auto;
+}
+.p2:not(:last-child){
+  border-bottom: 1px dotted;
+}
+
+.p3{
+  background-color:rgb(238,138,238);
+  text-align: center;
+}

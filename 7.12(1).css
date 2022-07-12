@@ -1,0 +1,46 @@
+.a{
+  background-color: red;
+}
+.a>p{
+  width: 600px;
+  background-color: red;
+  margin: auto;
+}
+
+.b{
+  border: 1px solid;
+  max-width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.b>.p1{
+  overflow:auto;
+  height: 5em;
+}
+.b>div{
+  height: 5em;
+  background-color: pink;
+}
+.b>div:hover{
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color:pink;
+
+}
+.b>.p2{
+  overflow: auto;
+  height: 5em;
+}
+.c{
+  border:40px solid orange;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-top: 40px solid rgb(255,255,255);
+  border-left: 40px solid rgb(255,255,255);
+  border-right: 40px solid rgb(255,255,255);
+}
