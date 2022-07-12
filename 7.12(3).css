@@ -39,6 +39,10 @@ button{
   height: calc(100% - 105px);
   text-align: center;
 }
+.zuo1>a{
+text-decoration: none;
+color: blue;
+}
 .zhong{
   background-color:rgb(255,248,220);
   width: calc(100% - 200px*3);
