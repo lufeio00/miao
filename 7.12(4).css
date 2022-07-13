@@ -1,0 +1,25 @@
+body{
+  margin: 0px;
+  height: 100vh;
+}
+header{
+  height: 100px;
+  background-color: aqua;
+}
+.lfte{
+  width: 150px;
+  height: calc(100vh - 100px);
+  background-color:chocolate;
+  overflow: auto;
+}
+ul{
+  margin: 0px;
+}
+.right{
+  height: calc(100vh - 100px);
+  width:calc(100% - 150px);
+  overflow: auto;
+  background-color:darkolivegreen;
+  margin-left: 150px;
+  margin-top: calc(-100vh + 100px);
+}

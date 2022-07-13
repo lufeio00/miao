@@ -2,6 +2,9 @@ body *{
   margin-bottom: 20px;
   font-size: 20px;
 }
+body{
+  min-width: 600px;
+}
 header{
   background-color: black;
 }
@@ -27,7 +30,9 @@ header{
   background-color: rgb(255,192,203);
   text-align: center;
   line-height: 34px;
-
+}
+.d1>div:hover{
+  background-color: red;
 }
 .d1>div:nth-child(n+5){
   margin-left: 210px;
@@ -45,8 +50,13 @@ header{
   width: 600px;
   margin:auto;
 }
-.p2:not(:last-child){
+.p2{
   border-bottom: 1px dotted;
+}
+.p4{
+  border-bottom: none;
+  width: 600px;
+  margin: auto;
 }
 
 .p3{

@@ -8,6 +8,7 @@
 }
 
 .b{
+  box-sizing: border-box;
   border: 1px solid;
   max-width: 600px;
   padding-left: 10px;
