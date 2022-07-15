@@ -1,25 +1,23 @@
 body{
   margin: 0px;
-  height: 100vh;
+  font-size: 0px;
 }
-header{
+div{
   height: 100px;
-  background-color: aqua;
+  background-color: aquamarine;
 }
-.lfte{
+span{
+  display: inline-block;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  font-size: 18px;
+}
+ span:nth-child(2){
   width: 150px;
-  height: calc(100vh - 100px);
-  background-color:chocolate;
-  overflow: auto;
+  background-color: coral;
 }
-ul{
-  margin: 0px;
-}
-.right{
-  height: calc(100vh - 100px);
-  width:calc(100% - 150px);
-  overflow: auto;
-  background-color:darkolivegreen;
-  margin-left: 150px;
-  margin-top: calc(-100vh + 100px);
+span:nth-child(3){
+  width: calc(100% - 150px);
+  background-color: darkgreen;
+
 }

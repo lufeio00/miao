@@ -63,3 +63,28 @@ header{
   background-color:rgb(238,138,238);
   text-align: center;
 }
+.hnk{
+  width: 600px;
+  margin: auto;
+  font-size: 0px;
+}
+span{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  border: 3px solid;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 34px;
+  background-color: pink;
+}
+span:hover{
+  background-color: red;
+}
+.hnk *{
+  font-size: 18px;
+}
+span:nth-child(3n+2){
+  margin: 0 30px;
+}

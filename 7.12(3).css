@@ -1,91 +1,72 @@
+body>*{
+  display: inline-block;
+}
 body{
-  height: 100vh;
+  min-width: 800px;
   margin: 0px;
-  min-width:800px;
+  font-size: 0px;
 }
-body *{
-  margin: 0px;
+span{
   box-sizing: border-box;
-}
-.zuo,.you1,.you2{
-  width: 200px;
-  background-color: rgb(255,192,203);
+  height: 100vh;
   border: 2px solid;
-  height: 100%;
 }
-.zuo>p{
-  font-size: 25px;
-  font-weight: bold;
+.s1,.s4,.s3{
+  background-color: pink;
+  width: 200px;
+  font-size: 18px;
+  vertical-align: top;
+}
+h2{
+  margin: 0px;
   height: 60px;
+  text-align: center;
   line-height: 60px;
-  text-align:center;
 }
- input{
-  height: 35px;
-  width: 145px;
-
+input{
+  width: 120px;
+  height: 30px;
+  vertical-align: bottom;
+  font-size: 20px;
+  box-sizing: border-box;
 }
 button{
-  box-sizing: content-box;
-  height: 15px;
-  width: 30px;
-  padding-bottom: 5px;
-
+  height: 26px;
+  width: 40px;
 }
-
-.zuo1{
+ul{
+  margin: 0px;
   margin-top: 10px;
-  overflow-y: scroll;
-  height: calc(100% - 105px);
+  height: calc(100vh - 102px );
+  overflow: auto;
   text-align: center;
+  padding: 0px;
 }
-.zuo1>a{
-text-decoration: none;
-color: blue;
+a{
+  text-decoration: none;
+  color: blue;
 }
-.zhong{
-  background-color:rgb(255,248,220);
-  width: calc(100% - 200px*3);
-  height: 100vh;
-  margin-left: 200px;
-  margin-top: -100vh;
-  border: 2px solid;
-}
-.zhong2 > p {
+
+.s2>p{
   height: 60px;
+  margin: 0;
+  padding-left: 20px;
   line-height: 60px;
-  margin-left: 10px;
 }
-.zhong1{
-  box-sizing: border-box;
-  border-bottom: 2px solid;
-  width: 100%;
-  height:60px;
-}
-.zhong1>p{
+.s2{
+  background-color: bisque;
+  width: calc(100% - 600px);
+  height:100vh;
   font-size: 25px;
-  line-height: 60px;
-  font-weight: bold;
-  margin-left: 15px;
+  overflow: auto;
 }
-.zhong2{
-  overflow-y: scroll;
-  height: calc(100% - 60px);
-  min-width: 200px;
+.s2>span{
+  border: 0px;
 }
-.you1{
-  margin-left:calc(200px + (100% - 200px*3));
-  margin-top: -100vh;
+ol{
+  font-size: 20px;
 }
-.you2{
-  margin-left:calc(400px + (100% - 200px*3));
-  margin-top: -100vh;
-}
-.you1>p , .you2>p{
+.s3,.s4{
   font-size: 25px;
-  font-weight:bold;
-  height: 60px;
-  line-height: 60px;
-  text-align: right;
-  margin-right: 10px;
+  padding:20px 0 0 10px;
 }
