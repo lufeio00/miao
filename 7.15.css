@@ -8,15 +8,20 @@ div{
   position: relative;
   display: inline-block;
 }
-div>*{
+ div>*{
   width: 300px;
 }
+
 .d1{
   width: 80px;
-  background-color: rgb(60,60,60);
   border-radius: 5px;
-  xtext-align: center;
+  text-align: center;
 }
+.d1:hover{
+  background-color: rgb(60,60,60);
+}
+
+
 ul{
   list-style: none;
   position: absolute;
@@ -54,7 +59,7 @@ li{
   padding-left: 10px;
   width: 290px;
 }
- span{
+ li>span{
   display: inline-block;
   margin: 0;
   padding: 0;
