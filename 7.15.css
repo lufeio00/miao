@@ -15,6 +15,9 @@ div{
 .d1{
   width: 80px;
   border-radius: 5px;
+
+}
+.di>span{
   text-align: center;
 }
 .d1:hover{
