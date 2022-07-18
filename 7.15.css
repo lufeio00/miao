@@ -25,8 +25,6 @@ div{
 .d1:hover{
   background-color: rgb(60,60,60);
 }
-
-
 ul{
   list-style: none;
   position: absolute;
@@ -68,7 +66,6 @@ li{
   position: absolute;
   right: 10px;
 }
-
 hr{
   margin-left: -10px;
 }

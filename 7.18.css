@@ -1,0 +1,33 @@
+ *{
+  margin: 0;
+  padding: 0;
+}
+span{
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
+}
+.sprite>div>span{
+  height: 40px;
+  width: 45px;
+  background-image: url(JL.png);
+}
+.sprite1{
+  background-position: 0px 0px;
+}
+.sprite2{
+  background-position: -43px 0px;
+  margin-left: 20%;
+}
+.sprite3{
+  background-position: -86px 0px;
+  margin-left: 40%;
+}
+.sprite4{
+  background-position: -293px -45px;
+  margin-left: 60%;
+}
+.sprite5{
+  background-position: 1px -76px;
+  margin-left: 80%;
+}
