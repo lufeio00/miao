@@ -17,8 +17,10 @@ div{
   border-radius: 5px;
 
 }
-.di>span{
+.d1>span{
+  display: inline-block;
   text-align: center;
+  width: 80px;
 }
 .d1:hover{
   background-color: rgb(60,60,60);
@@ -36,6 +38,7 @@ ul{
   background-color:rgb(37,37,38);
   display: none;
   white-space: nowrap;
+  border-radius: 5px;
 }
 div:hover{
   background-color: rgb(131, 127, 127);
@@ -50,12 +53,8 @@ li:hover{
   background-color: rgb(62,156,214);
 }
 .u2{
-  left: 290px;
+  left: 100%;
   top:0;
-}
-.u3{
-  left: 600px;
-  top: 0;
 }
 li{
   position:relative;
@@ -68,4 +67,8 @@ li{
   padding: 0;
   position: absolute;
   right: 10px;
+}
+
+hr{
+  margin-left: -10px;
 }
