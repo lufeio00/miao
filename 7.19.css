@@ -18,11 +18,13 @@ header:active{
   width: 2px;
   background-color:inherit;
   transition: 3s linear;
+  visibility: hidden;
 
 }
 header:active .d1{
   background-color: red;
   width: 100px;
+  visibility: visible;
 }
 header:active.d1{
   width: 100px;
