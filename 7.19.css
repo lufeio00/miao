@@ -1,0 +1,30 @@
+header{
+  background-image: url(5.png);
+  height: 100px;
+  width: 100px;
+  background-position: 0px 0px;
+  position: absolute;
+  left: 67px;
+  top: 59px;
+
+
+}
+header:active{
+  background-position: -2900px 0px;
+  transition: 2s 3s  steps(29);
+}
+.d1{
+  height: 2px;
+  width: 2px;
+  background-color:inherit;
+  transition: 3s linear;
+
+}
+header:active .d1{
+  background-color: red;
+  width: 100px;
+}
+header:active.d1{
+  width: 100px;
+  height: 100px;
+}
