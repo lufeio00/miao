@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+label{
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  border: 1px solid grey;
+  border-radius:80px;
+  transition: 1s;
+}
+div{
+  position: absolute;
+  left: 0;
+  margin: 4px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px 3px  rgb(196, 194, 194);
+  width: 145px;
+  height: 140px;
+  border-radius: 100%;
+  transition: 1s ease;
+}
+input{
+  display: none;
+}
+input:checked ~ label{
+  background-color: green;
+}
+input:checked ~label>div{
+  left: calc(100% - 154px);
+}
