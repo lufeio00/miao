@@ -1,0 +1,27 @@
+body,html{
+  margin: 0px;
+  height: 100%;
+}
+div{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+span:nth-child(1){
+  height: 100px;
+  width:100%;
+  background-color:aquamarine;
+}
+span:nth-child(2){
+  width: 150px;
+  height:calc(100% - 100px);
+  overflow: auto;
+  background-color: orange;
+}
+span:nth-child(3){
+  width: calc(100% - 150px) ;
+  height:calc(100% - 100px) ;
+  overflow: auto;
+  background-color: green;
+}

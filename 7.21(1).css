@@ -1,0 +1,65 @@
+body,html{
+  margin: 0;
+  height: 100%;
+}
+div{
+  display: flex;
+  height: 100%;
+
+}
+span{
+  border: 2px solid;
+  box-sizing: border-box;
+}
+span:nth-child(1),span:nth-child(3),span:nth-child(4){
+  width: 200px;
+  height: 100%;
+  background-color: pink;
+}
+span:nth-child(2){
+  flex-grow: 1;
+  width: 1px;
+  background-color: bisque;
+}
+span:nth-child(1)>p{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+input{
+  width: 140px;
+  height: 30px;
+  box-sizing: border-box;
+}
+button{
+  height: 30px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  text-align: center;
+  height: calc(100% - 110px);
+  overflow: auto;
+}
+span:nth-child(2)>p{
+  margin: 0;
+  font-size: 30px;
+  height: 80px;
+  line-height: 80px;
+  box-sizing: border-box;
+  border-bottom:  2px solid;
+}
+ol{
+  margin: 0;
+  height:calc(100% - 80px) ;
+  overflow: auto;
+}
+span:nth-child(3),span:nth-child(4){
+  font-size: 30px;
+  line-height: 80px;
+}
