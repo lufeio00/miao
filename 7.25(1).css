@@ -1,0 +1,25 @@
+ body,html,div{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+span{
+  float: left;
+}
+span:nth-child(1){
+  height: 100px;
+  width: 100%;
+  background-color: aquamarine;
+}
+span:nth-child(2){
+  width: 150px;
+  height:calc(100% - 100px);
+  background-color: orange;
+  overflow: auto;
+}
+span:nth-child(3){
+  width: calc(100% - 150px);
+  height: calc(100% - 100px);
+  background-color:green;
+  overflow: auto;
+}
