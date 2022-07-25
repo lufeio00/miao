@@ -1,0 +1,60 @@
+.Table{
+  border-collapse: collapse;
+  width:100% ;
+  text-align: left;
+}
+.Table * {
+  padding: 5px;
+}
+.Table tr>:nth-child(1){
+  width: 10%;
+}
+.Table tr>:nth-child(2){
+  width: 20%;
+}
+.Table tr>:nth-child(3){
+  width: 35%;
+}
+.Table tr>:nth-child(4){
+  width: 35%;
+}
+
+.Table  tr{
+  border-bottom: 1px solid rgb(222,226,230);
+}
+.Table thead tr:nth-child(1){
+  border-bottom: 2px solid black;
+}
+.Table-striped tbody tr:nth-child(1),
+.Table-striped tbody tr:nth-child(3){
+  background-color: rgb(242,242,242);
+}
+.Table-hover tbody >tr:hover{
+  background-color: rgb(242,242,242);
+}
+.Table-bordered,
+.Table-bordered th,
+.Table-bordered td{
+  border: 1px solid rgb(222,226,230);
+}
+.Table-borderless,
+.Table-borderless th,
+.Table-borderless td{
+  border: hidden;
+}
+.Table-dark{
+  color: white;
+  background-color: rgb(33,37,41);
+}
+.Table-dark thead tr:nth-child(1){
+  border-bottom: 2px solid white;
+}
+.Table-dark tr{
+  border-bottom: 1px solid #373B3E;
+}
+.Table-dark tbody >tr:hover{
+  background-color:rgb(50,53,57)
+}
+.Table-sm *{
+  padding: 0;
+}
