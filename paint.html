@@ -10,7 +10,6 @@
       margin: auto;
     }
   </style>
-  <script src="paint1.js"></script>
 </head>
 <body>
   <canvas width="500" height="400"></canvas>
@@ -46,7 +45,7 @@
 
       * 画出rgb色彩空间的某一面（尺寸要大于100x100）
          'rgb(255,255,0)'
-         '#ff00ff'
+         '#00ffff'
         如果做出上一题后，尝试将其每个点的坐标乘以一个矩阵（如(2,0,0,2)或(1,0.27得到新的位置，即绘制出被线性变幻后的色彩空间某一面
         可以考虑如下几种矩阵：
            2 0
@@ -112,30 +111,49 @@
     }
   }
 
-  for(var i=200;i<=300;i+=1){
-    for(var j=150;j<=250;j+=1){
-      if(Math.sqrt((i-250)**2+(j-200)**2)==50){
-        dot(i,j,'red')
-      }
-    }
+  for(var i = 0; i <= 360; i++){  //空心圆
+    var x = 0, y =0
+    x = 50 * Math.cos(i)
+    y = 50 * Math.sin(i)
+    dot(250 + x, 200 + y,'red')
+  }
+  for(var i = 0; i <= 360; i++){  //空心圆
+    var x = 0, y =0
+    x = 150 * Math.cos(i)
+    y = 150 * Math.sin(i)
+    dot(250 + x, 200 + y,'red')
   }
 
-  for(var i=150;i<=350;i+=1){
-    for(var j=100;j<=300;j+=1){
-      if(Math.sqrt((i-250)**2+(j-200)**2)==200){
-        dot(i,j,'red')
-      }
-    }
-  }
-
-  for(var i=0;i<=200;i+=1){
+  for(var i=0;i<=200;i+=1){    //实心圆
     for(var j=100;j<=300;j+=1){
       if(Math.sqrt((i-100)**2+(j-200)**2)<=100){
         dot(i,j,'red')
       }
     }
   }
+
+  for(var x=0,i=0;x<=200;x++,i=i+0.1){ //sin函数
+    var y=30*Math.sin(i)
+    dot(300+x,200-y,'red')
+  }
+
+
 </script>
 <script>
+  debugger
+  var a=255,b=255,c=0,d=''
+    for(var x=200;x<=300;x++,b--,c++,a--){
+      var b1=b
+      var c1=c
+      var a1=a
+      for(var y=300;y<=400;y++,c++,b--,a--){
+        d="rgb("+a+','+b+','+c+')'
+        dot(x,y,d)
+        dot((0.5*x-0.87*y)+300,(0.87*x+0.5*y)-50,d)
+      }
+      b=b1
+      c=c1
+      a=a1
+  }
 </script>
 </html>
