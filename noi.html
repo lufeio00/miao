@@ -1074,7 +1074,7 @@
   console.log(sum);
 </script>
 
-<script type="" id="ch0105/42">
+<script type="x" id="ch0105/42">
   var height=Number(prompt())
   var width=Number(prompt())
   var border=String(prompt())
@@ -1085,58 +1085,63 @@
       for(var j=0;j<width;j++){
         sum=sum+border
       }
-      console.log(sum);
-      sum=''
-      console.log("\n")
+      if(i!==height-1){
+        sum=sum+'\n'
+      }
     }
+    console.log(sum);
+    sum=''
   }else{
     for(var i=0;i<height;i++){
       if(i===0||i===height-1){
         for(var j=0;j<width;j++){
-          console.log(border)
+          sum=sum+border
         }
-        console.log("\n")
+          sum=sum+'\n'
       }else{
         for(var j=0;j<width;j++){
           if(j===0||j===width-1){
-            console.log(border)
+            sum=sum+border
           }else{
-            console.log(" ")
+            sum=sum+' '
           }
         }
-        console.log("\n")
-      }
+        if(j!==width-1){
+          sum=sum+'\n'
+        }
+        }
     }
+    console.log(sum);
   }
 </script>
 
 <script type="x" id="ch0105/43">
   var n=Number(prompt())
-  var a=0
-  var b=0
-  for(var i=1;i<=n;i++){
-    for(var j=1;j<=n;j++){
-      if(i*j===n){
-
+  for(var i=2;i<=n;i++){
+      if(n%i===0){
+        console.log(n/i);
+        break
       }
     }
-  }
 </script>
 
 <script type="" id="ch0105/44">
- var n=Number(prompt())
- for(var i=1;;i++){
-   var a=0
-
-   for(let i=1;i<n;i++){
-      if(n%i!==0){
-      a=a+1;
+  var n=Number(prompt())
+  var sum=0
+  for(var j=2;;j++){
+    for(var i=2;i<=j;i++){
+        if(j%i!==0){
+          break
+        }
+        if(j===i){
+          sum+=1
+        }
       }
     }
-    if(b+2==n){
-
-    }
- }
+    if(sum===n){
+      console.log(j);
+      break
+  }
 </script>
 
 <script type="x" id="ch0105/45">

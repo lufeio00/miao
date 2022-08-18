@@ -111,13 +111,13 @@
     }
   }
 
-  for(var i = 0; i <= 360; i++){  //空心圆
+  for(var i = 0; i <= 360; i+=0.1){  //空心圆
     var x = 0, y =0
     x = 50 * Math.cos(i)
     y = 50 * Math.sin(i)
     dot(250 + x, 200 + y,'red')
   }
-  for(var i = 0; i <= 360; i++){  //空心圆
+  for(var i = 0; i <= 360; i+=0.1){  //空心圆
     var x = 0, y =0
     x = 150 * Math.cos(i)
     y = 150 * Math.sin(i)
@@ -133,7 +133,7 @@
   }
 
   for(var x=0,i=0;x<=200;x++,i=i+0.1){ //sin函数
-    var y=30*Math.sin(i)
+    var y=20*Math.sin(i)
     dot(300+x,200-y,'red')
   }
 
