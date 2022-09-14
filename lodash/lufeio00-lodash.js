@@ -13,7 +13,7 @@ var lufeio00 = {
 
 
   compact:function(){
-
+    for
   }
 
 }
