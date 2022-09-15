@@ -150,7 +150,7 @@ var lufeio00 = {
     return array
   },
 
-  every:function every(collection,predicate=)
+ /*  every:function every(collection,predicate=){} */
 
 
 
