@@ -73,11 +73,84 @@ var lufeio00 = {
     return r
   },
 
-  flattenDepth:function(array,depth=1){
+/*   flattenDepth:function(array,depth=1){
     var r=[]
 
+  }, */
+
+  fromPairs:function fromPairs(pairs){
+    var r={}
+    for(var i=0;i<pairs.length;i++){
+      r[pairs[i][0]]=pairs[i][1]
+    }
+    return r
   },
 
+  head:function head(array){
+    return array[0]
+  },
+
+  indexOf:function indexOf(array,value,fromIndex=0){
+    for(var i=fromIndex;i<array.length;i++){
+      if(array[i]==value){
+        return i
+      }
+    }
+    return -1
+  },
+
+  lastIndexOf:function lastIndexOf(array,value,fromIndex=array.length-1){
+    for(var i=fromIndex;i>=0;i--){
+      if(array[i]==value){
+        return i
+      }
+    }
+    return -1
+  },
+
+  initial:function initial(array){
+    return array.slice(0,array.length-1)
+  },
+
+  join:function join(array,separator=','){
+    var r=''
+    for(var i=0;i<array.length;i++){
+      if(i==array.length-1){
+        r+=array[i]
+      }else{
+        r+=array[i]+separator
+      }
+    }
+    return r
+  },
+
+  last:function lase(array){
+    return array[array.length-1]
+  },
+
+ /*  pull:function pull(array,values){
+
+    for(var i=0;i<array.length;i++){
+      if(values.indexOf(array[i])!=-1){
+
+      }
+    }
+  } */
+
+  reverse:function reverse(array){
+    var i=0
+    var j=array.length-1
+    while(j>i){
+      var t=array[j]
+      array[j]=array[i]
+      array[i]=t
+      i++
+      j--
+    }
+    return array
+  },
+
+  every:function every(collection,predicate=)
 
 
 
