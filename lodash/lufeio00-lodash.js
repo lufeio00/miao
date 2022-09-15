@@ -26,6 +26,22 @@ var lufeio00 = {
 
  /*  difference:function(array,values){}, */
 
+
+  dropRight:function dropRight(array,n=1){
+    for(var i=0;i<n;i++){
+      array.pop()
+    }
+    return array
+  },
+
+  /* dropRightWhile:function dropRightWhile(array,){}, */
+
+
+
+
+
+
+
   fill:function(array,value,start=0,end=array.length){
     for(var i=start;i<end;i++){
       array[i]=value
@@ -40,7 +56,9 @@ var lufeio00 = {
     return array
   },
 
-/*   findIndex:function(array){}, */
+  /* findIndex:function(array,identity,fromIndex=0){
+
+  }, */
 
 /*   findLastIndex: function(){}, */
 
@@ -73,10 +91,20 @@ var lufeio00 = {
     return r
   },
 
-/*   flattenDepth:function(array,depth=1){
+  flattenDepth:function flattenDepth(array,depth=1){
     var r=[]
-
-  }, */
+    y(array,depth)
+    function y(array,depth){
+      for(var i=0;i<array.length;i++){
+        if(Array.isArray(array[i])&&depth>0){
+          y(array[i],--depth)
+        }else{
+          r.push(array[i])
+        }
+      }
+    }
+    return r
+  },
 
   fromPairs:function fromPairs(pairs){
     var r={}
@@ -118,7 +146,7 @@ var lufeio00 = {
       if(i==array.length-1){
         r+=array[i]
       }else{
-        r+=array[i]+separator
+        r+=array[i]+''+separator
       }
     }
     return r
@@ -128,14 +156,15 @@ var lufeio00 = {
     return array[array.length-1]
   },
 
- /*  pull:function pull(array,values){
+  pull:function pull(array,...values){
 
     for(var i=0;i<array.length;i++){
       if(values.indexOf(array[i])!=-1){
-
+        array=array.slice(0,i).concat(array.slice(i+1))
       }
     }
-  } */
+    return array
+  },
 
   reverse:function reverse(array){
     var i=0
@@ -150,7 +179,23 @@ var lufeio00 = {
     return array
   },
 
- /*  every:function every(collection,predicate=){} */
+  intersection:function intersection(...arrays){
+    var r=[]
+    for(var i=0;i<arrays[0].length;i++){
+      r.push(arrays[0][i])
+      for(var j=1;j<arrays.length;j++){
+        if(arrays[j].indexOf(arrays[0][i])==-1){
+          r.pop()
+          break
+        }
+      }
+    }
+    return r
+  },
+
+
+
+/*   every:function every(collection,predicate=){} */
 
 
 
