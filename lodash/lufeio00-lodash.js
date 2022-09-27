@@ -193,9 +193,193 @@ var lufeio00 = {
     return r
   },
 
+  sortedIndex:function sortedIndex(array,value){
+    var left=0
+    var right=array.length-1
+    while(right-left>1){
+      var mid=Math.floor((left+right)/2)
+      if(array[mid]>value){
+        right=mid
+      }else{
+        left=mid
+      }
+    }
+    return right
+  },
+
+  union:function union(...array){
+    var r=array[0]
+    for(var i=1;i<array.length;i++){
+      for(var j=0;j<array[i].length;j++){
+        if( r.indexOf(array[i][j])==-1){
+          r.push(array[i][j])
+        }
+      }
+    }
+    return r
+  },
+
+  uniq:function uniq(array){
+    var r=[]
+    for(var i=0;i<array.length;i++){
+      if(r.indexOf(array[i])==-1){
+        r.push(array[i])
+      }
+    }
+    return r
+  },
+
+  unzip:function unzip(array){
+    var r=[]
+    for(var i=0;i<array[0].length;i++){
+      var t=[]
+      for(var j=0;j<array.length;j++){
+        t.push(array[j][i])
+      }
+      r.push(t)
+    }
+    return r
+  },
+
+  sortedIndex: function sortedIndex(array,value){
+    for(var i=0;i<array.length;i++){
+      if(array[i] >= value){
+        return i
+      }
+    }
+    return array.length
+  },
+
+  sortedIndexO:function  sortedIndexOf(array,value){
+    for(var i=0;i<array.length;i++){
+      if(array[i]==value){
+        return i
+      }else if(array[i]>value){
+        return -1
+      }
+    }
+    return -1
+  },
+
+  sortedLastIndex	:function sortedLastIndex	(array,value){
+    for(var i=0;i<array.length;i++){
+      if(array[i]==value && array[i+1]>value){
+        return i+1
+      }
+    }
+    return array.length
+  },
+
+  sortedLastIndexOf	:function sortedLastIndexOf(array,value){
+    for(var i=0;i<array.length;i++){
+      if(array[i]==value && array[i+1]>value){
+        return i
+      }
+    }
+    return -1
+  },
+
+  sortedUniq:function sortedUniq(array){
+    var map=[]
+    var newArray=[]
+    for(var i=0;i<array.length;i++){
+      if( !(array[i] in map)){
+        map[array[i]]=0
+        newArray.push(array[array[i]])
+      }
+    }
+    return newArray
+  },
+
+  tail:function tail(array){
+    return array.slice(1)
+  },
+
+  take:function take(array,n=1){
+    return array.slice(0,n)
+  },
+
+  takeRight:function takeRight(array,n=1){
+    var x=array.length
+    if(n>=x){
+      return array
+    }
+    return array.slice(x-n)
+
+  },
+
+  union:function union(...array){
+    var map=[]
+    var r=[]
+    for(var i=0;i<array.length;i++){
+      for(var j=0;j<array[i].length;j++){
+        if( !(array[i][j] in map)){
+          map[array[i][j]]=0
+          r.push(array[i][j])
+        }
+      }
+    }
+    return r
+  },
+
+  uniq:function uniq(array){
+    var map={}
+    var  r=[]
+    for(var i=0;i<array.length;i++){
+      if( !(array[i] in map)){
+        map[array[i]]=0
+        r.push(array[i])
+      }
+    }
+    return r
+  },
+
+  unzip:function unzip(array){
+    var r=[]
+    var t=[]
+    for(var i=0;i<array[0].length;i++){
+      t=[]
+      for(var j=0;j<array.length;j++){
+        t.push(array[j][i])
+      }
+      r.push(t)
+    }
+    return r
+  },
+
+  without:function without(array,...values){
+    var r=[]
+    for(var i=0;i<array.length;i++){
+      if( values.indexOf(array[i])==-1 ){
+        r.push(array[i])
+      }
+    }
+    return r
+  },
+
+  xor:function xor(...array){
+    var r=[]
+    var map={}
+    for(var i=0;i<array.length;i++){
+      for(var j=0;j<array[i].length;j++){
+        if( !(array[i][j] in map)){
+          map[array[i][j]]=0
+        }else{
+          map[array[i][j]]++
+        }
+      }
+    }
+    for(var x in map){
+      if(map[x]==0){
+        r.push(+x)
+      }
+    }
+    return r
+  },
 
 
-/*   every:function every(collection,predicate=){} */
+
+
 
 
 
