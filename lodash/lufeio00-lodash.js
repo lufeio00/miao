@@ -378,7 +378,56 @@ var lufeio00 = {
   },
 
 
+  zip:function zip(...array){
+    var result = []
 
+    for(var i=0;i<array[0].length;i++){
+      var t=[]
+      for(var j=0;j<array.length;j++){
+        t.push(array[j][i])
+      }
+      result.push(t)
+    }
+    return result
+  },
+
+  zipObject:function zipObject(props=[],values=[]){
+    var result={}
+    var j=0
+    for(var i=0;i<props.length;i++){
+      result[props[i]]=values[j]
+      j++
+    }
+    return result
+  },
+
+  countBy:function countBy(array,iteratee){
+    var result ={}
+    if( typeof iteratee == "function"){
+      for(var i=0;i<array.length;i++){
+        var t= iteratee(array[i])
+        if( t in result){
+          result[t]++
+        }else{
+          result[t]=1
+        }
+      }
+    }
+    if( typeof iteratee == "string"){
+      for(var i=0;i<array.length;i++){
+        var j=0
+        for( var t  of array[i]){
+          j++
+        }
+        if(j in result){
+          result[j]++
+        }else{
+          result[j]=1
+        }
+      }
+    }
+    return result
+  },
 
 
 
